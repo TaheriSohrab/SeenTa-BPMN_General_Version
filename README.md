@@ -8,25 +8,6 @@
 - 📫 How to reach me: 
   - **taherisohrab4@gmail.com**
     <br>
-
-## 📠 Connect with me
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/sohrabtaheri/" target="blank">
-
-![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
-</a>
-
-  <a href="https://codepen.io/seenta" target="blank">
-
-![Codepen](https://img.shields.io/badge/codepen-purple?style=for-the-badge&logo=codepen&logoColor=white)
-</a>
-
-<a href="https://www.instagram.com/asktocode/" target="blank">
-
-![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
-</a>
-
 </p>
 <p align="center">
    <img alt="logo" src="./public/icon-process.png" />
