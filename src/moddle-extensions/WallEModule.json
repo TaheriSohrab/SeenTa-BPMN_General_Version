@@ -1,0 +1,15 @@
+{
+  "name": "WallE",
+  "prefix": "WallE",
+  "uri": "WallE",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "WallE",
+      "superClass": ["bpmn:Task"]
+    }
+  ]
+}

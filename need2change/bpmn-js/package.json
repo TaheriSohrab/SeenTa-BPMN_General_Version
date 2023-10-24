@@ -1,0 +1,153 @@
+{
+  "_args": [
+    [
+      "bpmn-js@11.5.0",
+      "C:\\Users\\s.taheri\\Desktop\\vite-vue-bpmn-process-dev23213"
+    ]
+  ],
+  "_from": "bpmn-js@11.5.0",
+  "_id": "bpmn-js@11.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Bdj53UvfiDtGE1wmiBmpgjl5RMLhCGV/C841dyC+t4kBHj7vApAeeHs2Qiycj390HO4B2U8UDROLT7yjdXEEUA==",
+  "_location": "/bpmn-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bpmn-js@11.5.0",
+    "name": "bpmn-js",
+    "escapedName": "bpmn-js",
+    "rawSpec": "11.5.0",
+    "saveSpec": null,
+    "fetchSpec": "11.5.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bpmn-js/-/bpmn-js-11.5.0.tgz",
+  "_spec": "11.5.0",
+  "_where": "C:\\Users\\s.taheri\\Desktop\\vite-vue-bpmn-process-dev23213",
+  "author": {
+    "name": "Nico Rehwaldt",
+    "url": "https://github.com/nikku"
+  },
+  "bugs": {
+    "url": "https://github.com/bpmn-io/bpmn-js/issues"
+  },
+  "contributors": [
+    {
+      "name": "bpmn.io contributors",
+      "url": "https://github.com/bpmn-io"
+    }
+  ],
+  "dependencies": {
+    "bpmn-moddle": "^8.0.0",
+    "diagram-js": "^11.9.1",
+    "diagram-js-direct-editing": "^2.0.0",
+    "ids": "^1.0.0",
+    "inherits-browser": "^0.1.0",
+    "min-dash": "^4.0.0",
+    "min-dom": "^4.0.3",
+    "object-refs": "^0.3.0",
+    "tiny-svg": "^3.0.0"
+  },
+  "description": "A bpmn 2.0 toolkit and web modeler",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-json": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
+    "babel-loader": "^9.1.0",
+    "babel-plugin-istanbul": "^6.1.1",
+    "bpmn-font": "^0.12.0",
+    "camunda-bpmn-moddle": "^4.0.1",
+    "chai": "4.1.2",
+    "chai-match": "^1.1.1",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.3",
+    "del": "^6.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "execa": "^5.1.1",
+    "file-drops": "^0.5.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-coverage": "^2.2.0",
+    "karma-debug-launcher": "^0.0.5",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-mocha": "^2.0.1",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mkdirp": "^2.0.0",
+    "mocha": "^10.1.0",
+    "mocha-test-container-support": "0.2.0",
+    "npm-run-all": "^4.1.2",
+    "puppeteer": "^19.4.1",
+    "remark-cli": "^11.0.0",
+    "remark-preset-bpmn-io": "^0.2.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-license": "^2.9.1",
+    "sinon": "^15.0.0",
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.74.0"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "test/util",
+    "test/helper",
+    "test/matchers",
+    "!.eslintrc"
+  ],
+  "homepage": "https://github.com/bpmn-io/bpmn-js#readme",
+  "keywords": [
+    "bpmn",
+    "bpmn-js",
+    "toolkit",
+    "web modeler",
+    "modeler",
+    "modeling",
+    "process modeling"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "name": "bpmn-js",
+  "remarkConfig": {
+    "plugins": [
+      "preset-bpmn-io",
+      [
+        "lint-no-html",
+        false
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpmn-io/bpmn-js.git"
+  },
+  "scripts": {
+    "all": "run-s lint test distro test:distro",
+    "collect-translations": "cross-env COLLECT_TRANSLATIONS=1 npm test",
+    "dev": "npm test -- --auto-watch --no-single-run",
+    "distro": "node tasks/build-distro.js",
+    "format": "run-s format:markdown 'lint -- --fix'",
+    "format:markdown": "remark . -qo",
+    "lint": "eslint .",
+    "postversion": "run-s distro test:distro",
+    "prepare": "run-s distro",
+    "start": "cross-env SINGLE_START=modeler npm run dev",
+    "start:navigated-viewer": "cross-env SINGLE_START=navigated-viewer npm run dev",
+    "start:viewer": "cross-env SINGLE_START=viewer npm run dev",
+    "test": "karma start test/config/karma.unit.js",
+    "test:distro": "node tasks/test-distro.js"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "version": "11.5.0"
+}

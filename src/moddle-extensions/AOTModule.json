@@ -1,0 +1,15 @@
+{
+  "name": "AOT",
+  "prefix": "AOT",
+  "uri": "AOT",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "AOT",
+      "superClass": ["bpmn:Task"]
+    }
+  ]
+}

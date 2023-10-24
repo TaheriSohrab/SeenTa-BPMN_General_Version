@@ -1,0 +1,59 @@
+.palette {
+  width: 360px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.djs-visual rect{
+  stroke: rgb(0, 0, 0) !important;
+  stroke-width: 2px;
+  fill: rgb(255, 255, 255);
+  fill-opacity: 0;
+}
+.djs-visual g image{
+  padding: 10px !important;
+  margin: 50px !important;
+}
+
+.bpmn-icon-mikasaModule{
+    background-image: url("src/bpmn-icons/mikasa.png");
+  background-size: 1.5em 1.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bpmn-icon-mikasaModule:active{
+    background-image: url("src/bpmn-icons/mikasa.png");
+  background-size: 2.5em 2.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bpmn-icon-mikasaModule::selection{
+  background-image: url("src/bpmn-icons/mikasa.png");
+  background-size: 2.5em 2.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.bpmn-icon-wallEModule{
+    background-image: url("src/bpmn-icons/wallE.png");
+  background-size: 1.5em 1.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bpmn-icon-wallEModule:active{
+    background-image: url("src/bpmn-icons/wallE.png");
+  background-size: 1.7em 1.7em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bpmn-icon-wallEModule::selection{
+  background-image: url("src/bpmn-icons/wallE.png");
+  background-size: 1.7em 1.7em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.djs-popup-group{
+  display: flex !important;
+}

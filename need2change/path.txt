@@ -1,0 +1,1 @@
+paste the bmn-js in this directory to node_module
