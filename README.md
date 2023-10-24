@@ -4,9 +4,7 @@
 
 
 <h3>Learn More & Request In My Site:</h3>
-<a href="https://asktocode.com">
-![WebSite](https://img.shields.io/badge/Ask_to_code-a12?style=for-the-badge&logo=firefox&logoColor=white)
-</a>
+
 - 📫 How to reach me: 
   - **taherisohrab4@gmail.com**
     <br>
