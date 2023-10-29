@@ -3,7 +3,6 @@
 </h1>
 
 
-<h3>Learn More & Request In My Site:</h3>
 
 - 📫 How to reach me: 
   - **taherisohrab4@gmail.com**
